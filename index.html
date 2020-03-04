@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>学生信息</h1>
+    </header>
+    <form action="#" method="get">
+        <fieldset style="width: 450px;">
+            <legend>学生档案</legend>
+            <p>姓名：</p>
+            <input type="text" name="name" placeholder="请输入姓名" required="required" /><span>&nbsp*</span>
+            <p>学号：</p>
+            <input type="text" name="num" placeholder="请输入学号" required="required" /><span>&nbsp*</span>
+            <p>手机号码：</p>
+            <input type="text" name="tel" placeholder="请输入手机号" required="required" /><span>&nbsp*</span>
+            <p>邮箱：</p>
+            <input type="text" name="email" placeholder="请输入邮箱地址" required="required" /><span>&nbsp*</span>
+            <p>录取学校：</p>
+            <input type="search" name="school" autocomplete="on" list="names" class="school" />
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>河北医科大学</option>
+                <option>河北工业大学</option>
+                <option>北京大学</option>
+                <option>北京理工大学</option>
+            </datalist>
+            <p>入学成绩：</p>
+            <input type="text" name="grade" />
+            <p>入学时间</p>
+            <input type="date" name="dateDemo"></br>
+            </br>
+            <input type="submit" name="Submit">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
